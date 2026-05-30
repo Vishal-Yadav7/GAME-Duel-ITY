@@ -6,10 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class CookingGameManager : MonoBehaviour
 {
-    // =====================================================
-    // INSPECTOR FIELDS
-    // =====================================================
-
     [Header("Panels")]
     public GameObject winPanel;
     public GameObject failPanel;
@@ -28,37 +24,28 @@ public class CookingGameManager : MonoBehaviour
     public GameObject mother;
     public GameObject child;
 
-    // ─────────────────────────────────────────────────────
-    // GIRL WITH FOOD  (drag-drop sprite GameObjects here)
-    // ─────────────────────────────────────────────────────
-    [Header("Girl Holding Food — Sprites")]
+    [Header("Girl Holding Food (LEFT side)")]
     public GameObject girlWithOmelette;
     public GameObject girlWithTea;
     public GameObject girlWithMaggie;
 
-    // ─────────────────────────────────────────────────────
-    // GIRL SPEECH CLOUDS — one per dish
-    // ─────────────────────────────────────────────────────
     [Header("Girl Speech Clouds")]
     public GameObject girlOmeletteCloud;
     public GameObject girlTeaCloud;
     public GameObject girlMaggieCloud;
 
-    // ─────────────────────────────────────────────────────
-    // GIRL SPEECH TEXTS — TMP_Text inside each cloud
-    // ─────────────────────────────────────────────────────
-    [Header("Girl Speech Texts (inside clouds)")]
+    [Header("Girl Speech Texts")]
     public TMP_Text girlOmeletteText;
     public TMP_Text girlTeaText;
     public TMP_Text girlMaggieText;
 
-    [Header("Clouds")]
+    [Header("Character Clouds (RIGHT side)")]
     public GameObject husbandCloud;
     public GameObject wifeCloud;
     public GameObject motherCloud;
     public GameObject childCloud;
 
-    [Header("Dialogue Texts")]
+    [Header("Character Dialogue Texts")]
     public TMP_Text husbandText;
     public TMP_Text wifeText;
     public TMP_Text motherText;
@@ -87,24 +74,14 @@ public class CookingGameManager : MonoBehaviour
     public Slider cookHoldSlider;
     public float holdDuration = 2f;
 
-    // =====================================================
-    // PRIVATE STATE
-    // =====================================================
-
     private bool waitingForTap;
     private bool isTyping;
     private bool skipTyping;
-
     private bool cookReady = false;
     private bool isHoldingCook = false;
     private float holdProgress = 0f;
-
     private Coroutine timerRoutine;
     private bool timerRunning = false;
-
-    // =====================================================
-    // UNITY LIFECYCLE
-    // =====================================================
 
     void Start()
     {
@@ -136,13 +113,8 @@ public class CookingGameManager : MonoBehaviour
             if (isTyping) skipTyping = true;
             else waitingForTap = false;
         }
-
         HandleCookHold();
     }
-
-    // =====================================================
-    // HELPERS
-    // =====================================================
 
     void HideAllGirlFood()
     {
@@ -166,9 +138,7 @@ public class CookingGameManager : MonoBehaviour
         if (childCloud != null) childCloud.SetActive(false);
     }
 
-    // =====================================================
     // TIMER
-    // =====================================================
 
     void StartDishTimer()
     {
@@ -200,9 +170,7 @@ public class CookingGameManager : MonoBehaviour
         ShowFailPanel();
     }
 
-    // =====================================================
-    // COOK HOLD BUTTON
-    // =====================================================
+    // COOK HOLD
 
     public void OnCookButtonDown()
     {
@@ -213,11 +181,7 @@ public class CookingGameManager : MonoBehaviour
     public void OnCookButtonUp()
     {
         isHoldingCook = false;
-        if (holdProgress < 1f)
-        {
-            holdProgress = 0f;
-            if (cookHoldSlider != null) cookHoldSlider.value = 0f;
-        }
+        if (holdProgress < 1f) { holdProgress = 0f; if (cookHoldSlider != null) cookHoldSlider.value = 0f; }
     }
 
     void HandleCookHold()
@@ -248,10 +212,6 @@ public class CookingGameManager : MonoBehaviour
         if (cookHoldSlider != null) { cookHoldSlider.gameObject.SetActive(ready); cookHoldSlider.value = 0f; }
     }
 
-    // =====================================================
-    // CROSS POPUP
-    // =====================================================
-
     IEnumerator ShowCrossPopup()
     {
         if (crossPopup == null) yield break;
@@ -262,7 +222,7 @@ public class CookingGameManager : MonoBehaviour
     }
 
     // =====================================================
-    // SCENE 1 — HUSBAND (Omelette)
+    // SCENE 1 — HUSBAND intro + Omelette thank-you
     // =====================================================
 
     IEnumerator HusbandScene()
@@ -288,28 +248,33 @@ public class CookingGameManager : MonoBehaviour
 
     public void HusbandThankYou()
     {
-        StartCoroutine(ShowFoodThenThankyou_Omelette());
+        StartCoroutine(ThankYouScene_Omelette());
     }
 
-    IEnumerator ShowFoodThenThankyou_Omelette()
+    IEnumerator ThankYouScene_Omelette()
     {
         taskText.gameObject.SetActive(false);
         hintText.gameObject.SetActive(false);
-
-        // Background opens, girl with food appears on it — she STAYS the whole time
         HideAllGirlFood();
         HideAllGirlClouds();
+        HideAllClouds();
+
+        // Background ON — girl LEFT, husband RIGHT
         if (dialogueBackground != null) dialogueBackground.SetActive(true);
         if (girlWithOmelette != null) girlWithOmelette.SetActive(true);
+        husband.SetActive(true);
 
-        // Her cloud handles the entire thank-you conversation
-        yield return ShowGirlOmelette("Omelette is ready!");
-        yield return ShowGirlOmelette("This looks delicious, thank you!");
-        yield return ShowGirlOmelette("You're welcome. That's what family is for.");
+        // Husband thanks → girl replies (both stay on screen, only clouds swap)
+        yield return SayRight(husbandCloud, husbandText, "Wow, this looks delicious!");
+        yield return SayLeft(girlOmeletteCloud, girlOmeletteText, "Thank you! I hope you enjoy it.");
+        yield return SayRight(husbandCloud, husbandText, "You always take such good care of us.");
+        yield return SayLeft(girlOmeletteCloud, girlOmeletteText, "That's what family is for!");
 
-        // Clean up, move to next scene
+        // Clean up
         if (girlWithOmelette != null) girlWithOmelette.SetActive(false);
-        if (girlOmeletteCloud != null) girlOmeletteCloud.SetActive(false);
+        husband.SetActive(false);
+        HideAllGirlClouds();
+        HideAllClouds();
         if (dialogueBackground != null) dialogueBackground.SetActive(false);
 
         mother.SetActive(true);
@@ -318,7 +283,7 @@ public class CookingGameManager : MonoBehaviour
     }
 
     // =====================================================
-    // SCENE 2 — MOTHER (Tea)
+    // SCENE 2 — MOTHER intro + Tea thank-you
     // =====================================================
 
     IEnumerator MotherScene()
@@ -339,28 +304,32 @@ public class CookingGameManager : MonoBehaviour
 
     public void MotherThankYou()
     {
-        StartCoroutine(ShowFoodThenThankyou_Tea());
+        StartCoroutine(ThankYouScene_Tea());
     }
 
-    IEnumerator ShowFoodThenThankyou_Tea()
+    IEnumerator ThankYouScene_Tea()
     {
         taskText.gameObject.SetActive(false);
         hintText.gameObject.SetActive(false);
-
-        // Background opens, girl with tea appears on it — she STAYS
         HideAllGirlFood();
         HideAllGirlClouds();
+        HideAllClouds();
+
+        // Background ON — girl LEFT, mother RIGHT
         if (dialogueBackground != null) dialogueBackground.SetActive(true);
         if (girlWithTea != null) girlWithTea.SetActive(true);
+        mother.SetActive(true);
 
-        // Her cloud handles the entire thank-you conversation
-        yield return ShowGirlTea("Tea is ready!");
-        yield return ShowGirlTea("The tea is wonderful, thank you beta!");
-        yield return ShowGirlTea("I'm happy you liked it.");
+        yield return SayRight(motherCloud, motherText, "Beta, the tea smells wonderful!");
+        yield return SayLeft(girlTeaCloud, girlTeaText, "I made it just the way you like, Ma.");
+        yield return SayRight(motherCloud, motherText, "Thank you so much, beta.");
+        yield return SayLeft(girlTeaCloud, girlTeaText, "Anything for you!");
 
-        // Clean up, move to next scene
+        // Clean up
         if (girlWithTea != null) girlWithTea.SetActive(false);
-        if (girlTeaCloud != null) girlTeaCloud.SetActive(false);
+        mother.SetActive(false);
+        HideAllGirlClouds();
+        HideAllClouds();
         if (dialogueBackground != null) dialogueBackground.SetActive(false);
 
         child.SetActive(true);
@@ -369,7 +338,7 @@ public class CookingGameManager : MonoBehaviour
     }
 
     // =====================================================
-    // SCENE 3 — CHILD (Maggie)
+    // SCENE 3 — CHILD intro + Maggie thank-you
     // =====================================================
 
     IEnumerator ChildScene()
@@ -390,66 +359,69 @@ public class CookingGameManager : MonoBehaviour
 
     public void ChildThankYou()
     {
-        StartCoroutine(ShowFoodThenThankyou_Maggie());
+        StartCoroutine(ThankYouScene_Maggie());
     }
 
-    IEnumerator ShowFoodThenThankyou_Maggie()
+    IEnumerator ThankYouScene_Maggie()
     {
         taskText.gameObject.SetActive(false);
         hintText.gameObject.SetActive(false);
-
-        // Background opens, girl with maggie appears on it — she STAYS
         HideAllGirlFood();
         HideAllGirlClouds();
+        HideAllClouds();
+
+        // Background ON — girl LEFT, child RIGHT
         if (dialogueBackground != null) dialogueBackground.SetActive(true);
         if (girlWithMaggie != null) girlWithMaggie.SetActive(true);
+        child.SetActive(true);
 
-        // Her cloud handles the entire thank-you conversation
-        yield return ShowGirlMaggie("Noodles are ready!");
-        yield return ShowGirlMaggie("Yay! Thank you Mom!");
-        yield return ShowGirlMaggie("Enjoy your meal, Betaa!");
+        yield return SayRight(childCloud, childText, "Yay! Noodles! My favourite!");
+        yield return SayLeft(girlMaggieCloud, girlMaggieText, "Here you go, my love!");
+        yield return SayRight(childCloud, childText, "Thank you Mom, you're the best!");
+        yield return SayLeft(girlMaggieCloud, girlMaggieText, "Enjoy your meal, Betaa!");
 
         // Clean up
         if (girlWithMaggie != null) girlWithMaggie.SetActive(false);
-        if (girlMaggieCloud != null) girlMaggieCloud.SetActive(false);
+        child.SetActive(false);
+        HideAllGirlClouds();
+        HideAllClouds();
         if (cookButtonObject != null) cookButtonObject.SetActive(false);
         if (cookHoldSlider != null) cookHoldSlider.gameObject.SetActive(false);
         cookReady = false;
-
-        HideAllClouds();
-        HideAllGirlClouds();
-        if (dialogueBackground != null) dialogueBackground.SetActive(false);
         if (crossPopup != null) crossPopup.SetActive(false);
+        if (dialogueBackground != null) dialogueBackground.SetActive(false);
 
         ShowWinPanel();
     }
 
     // =====================================================
-    // GIRL DIALOGUE HELPERS
-    // Each one shows that girl's cloud, types the message,
-    // waits for tap, then hides the cloud.
+    // CORE DIALOGUE HELPERS
+    // SayLeft  = girl cloud (left side)
+    // SayRight = character cloud (right side)
+    // Both keep each other's character visible — only clouds swap.
     // =====================================================
 
-    IEnumerator ShowGirlOmelette(string msg)
+    IEnumerator SayLeft(GameObject cloud, TMP_Text textUI, string message)
     {
-        yield return StartCoroutine(ShowGirlDialogue(girlOmeletteCloud, girlOmeletteText, msg));
-    }
-
-    IEnumerator ShowGirlTea(string msg)
-    {
-        yield return StartCoroutine(ShowGirlDialogue(girlTeaCloud, girlTeaText, msg));
-    }
-
-    IEnumerator ShowGirlMaggie(string msg)
-    {
-        yield return StartCoroutine(ShowGirlDialogue(girlMaggieCloud, girlMaggieText, msg));
-    }
-
-    IEnumerator ShowGirlDialogue(GameObject cloud, TMP_Text textUI, string message)
-    {
+        HideAllClouds();
+        HideAllGirlClouds();
         if (cloud != null) cloud.SetActive(true);
-        if (textUI != null) textUI.text = "";
+        yield return StartCoroutine(TypeAndWait(textUI, message));
+        if (cloud != null) cloud.SetActive(false);
+    }
 
+    IEnumerator SayRight(GameObject cloud, TMP_Text textUI, string message)
+    {
+        HideAllClouds();
+        HideAllGirlClouds();
+        if (cloud != null) cloud.SetActive(true);
+        yield return StartCoroutine(TypeAndWait(textUI, message));
+        if (cloud != null) cloud.SetActive(false);
+    }
+
+    IEnumerator TypeAndWait(TMP_Text textUI, string message)
+    {
+        if (textUI != null) textUI.text = "";
         isTyping = true;
         skipTyping = false;
 
@@ -466,12 +438,10 @@ public class CookingGameManager : MonoBehaviour
         isTyping = false;
         waitingForTap = true;
         while (waitingForTap) yield return null;
-
-        if (cloud != null) cloud.SetActive(false);
     }
 
     // =====================================================
-    // STANDARD DIALOGUE SYSTEM (used for intro scenes)
+    // STANDARD INTRO DIALOGUE (wife + character, no girl)
     // =====================================================
 
     IEnumerator ShowHusband(string msg) { yield return StartCoroutine(ShowDialogue(husbandCloud, husbandText, msg)); }
@@ -483,10 +453,8 @@ public class CookingGameManager : MonoBehaviour
     {
         HideAllClouds();
         if (dialogueBackground != null) dialogueBackground.SetActive(true);
-
         cloud.SetActive(true);
         textUI.text = "";
-
         isTyping = true;
         skipTyping = false;
 
@@ -506,21 +474,18 @@ public class CookingGameManager : MonoBehaviour
     }
 
     // =====================================================
-    // WIN / FAIL PANELS
+    // WIN / FAIL
     // =====================================================
 
     public void ShowWinPanel()
     {
         if (winPanel != null) winPanel.SetActive(true);
-
         if (winPopupBox != null)
         {
             winPopupBox.transform.localScale = Vector3.one;
-            iTween.ScaleFrom(winPopupBox, iTween.Hash(
-                "scale", Vector3.zero, "time", popupTime,
+            iTween.ScaleFrom(winPopupBox, iTween.Hash("scale", Vector3.zero, "time", popupTime,
                 "easetype", iTween.EaseType.easeOutBack, "ignoretimescale", true));
         }
-
         StartCoroutine(PauseAfterDelay(popupTime));
     }
 
@@ -534,12 +499,10 @@ public class CookingGameManager : MonoBehaviour
     public void ShowFailPanel()
     {
         if (failPanel != null) failPanel.SetActive(true);
-
         if (failPopupBox != null)
         {
             failPopupBox.transform.localScale = Vector3.one;
-            iTween.ScaleFrom(failPopupBox, iTween.Hash(
-                "scale", Vector3.zero, "time", popupTime,
+            iTween.ScaleFrom(failPopupBox, iTween.Hash("scale", Vector3.zero, "time", popupTime,
                 "easetype", iTween.EaseType.easeOutBack, "ignoretimescale", true));
         }
         if (crossPopup != null) crossPopup.SetActive(false);
@@ -547,7 +510,7 @@ public class CookingGameManager : MonoBehaviour
     }
 
     // =====================================================
-    // BUTTON HANDLERS
+    // BUTTONS
     // =====================================================
 
     public void RetryLevel()
@@ -568,23 +531,5 @@ public class CookingGameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(homeSceneName);
-    }
-
-    // =====================================================
-    // UNUSED TypeText helper (kept for safety)
-    // =====================================================
-
-    IEnumerator TypeText(TMP_Text textUI, string message)
-    {
-        textUI.text = "";
-        isTyping = true;
-        skipTyping = false;
-        foreach (char c in message)
-        {
-            if (skipTyping) { textUI.text = message; break; }
-            textUI.text += c;
-            yield return new WaitForSeconds(typingSpeed);
-        }
-        isTyping = false;
     }
 }
