@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: 6a1d95cb16656564f82c61aaef0e12a6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4993544668869750657
+    second: Walk_LeftUp_0
+  - first:
+      213: 7844187103242201732
+    second: Walk_LeftUp_1
+  - first:
+      213: 8026715004763190199
+    second: Walk_LeftUp_2
+  - first:
+      213: 149370132358377372
+    second: Walk_LeftUp_3
+  - first:
+      213: -1839652412907183699
+    second: Walk_LeftUp_4
+  - first:
+      213: 8908256350671342672
+    second: Walk_LeftUp_5
+  - first:
+      213: -2511610316734548522
+    second: Walk_LeftUp_6
+  - first:
+      213: -7432211458768385105
+    second: Walk_LeftUp_7
+  - first:
+      213: -1902728739262194142
+    second: Walk_LeftUp_8
+  - first:
+      213: -6046731730836094008
+    second: Walk_LeftUp_9
+  - first:
+      213: 9070946514208619074
+    second: Walk_LeftUp_10
+  - first:
+      213: -5508978204171630624
+    second: Walk_LeftUp_11
+  - first:
+      213: -885721310195387082
+    second: Walk_LeftUp_12
+  - first:
+      213: 1673952031997463135
+    second: Walk_LeftUp_13
+  - first:
+      213: -3864741442115114404
+    second: Walk_LeftUp_14
+  - first:
+      213: -7999262951872675163
+    second: Walk_LeftUp_15
+  - first:
+      213: -1283011349559863492
+    second: Walk_LeftUp_16
+  - first:
+      213: -2573496904720459045
+    second: Walk_LeftUp_17
+  - first:
+      213: 6475088316195554246
+    second: Walk_LeftUp_18
+  - first:
+      213: 7424355000757253393
+    second: Walk_LeftUp_19
+  - first:
+      213: -2588812695180592204
+    second: Walk_LeftUp_20
+  - first:
+      213: 7714770801021265154
+    second: Walk_LeftUp_21
+  - first:
+      213: 4083303425996809901
+    second: Walk_LeftUp_22
+  - first:
+      213: -3139183852163714233
+    second: Walk_LeftUp_23
+  - first:
+      213: 3753054551863935369
+    second: Walk_LeftUp_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Walk_LeftUp_0
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1052
+        width: 78
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18fe60e5b62ac4540800000000000000
+      internalID: 4993544668869750657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_1
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1052
+        width: 97
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48aa3703c962cdc60800000000000000
+      internalID: 7844187103242201732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_2
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1053
+        width: 121
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b3353cf4ce946f60800000000000000
+      internalID: 8026715004763190199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_3
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1053
+        width: 110
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9f264f085ba21200800000000000000
+      internalID: 149370132358377372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_4
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 1052
+        width: 103
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da12a7a90ed3876e0800000000000000
+      internalID: -1839652412907183699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_5
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 794
+        width: 74
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c02e5f3fb70ab70800000000000000
+      internalID: 8908256350671342672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_6
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 797
+        width: 85
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d5b4d859b7f42dd0800000000000000
+      internalID: -2511610316734548522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 792
+        width: 94
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fabc5884e0b7bd890800000000000000
+      internalID: -7432211458768385105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_8
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 792
+        width: 85
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e9950fa462895e0800000000000000
+      internalID: -1902728739262194142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_9
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 794
+        width: 73
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c38e6b1781b51ca0800000000000000
+      internalID: -6046731730836094008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_10
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 540
+        width: 100
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24af8f37bc972ed70800000000000000
+      internalID: 9070946514208619074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_11
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 540
+        width: 120
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e70bf8d28d2c83b0800000000000000
+      internalID: -5508978204171630624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_12
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 538
+        width: 109
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6357fcf392945b3f0800000000000000
+      internalID: -885721310195387082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_13
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 536
+        width: 89
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a804e01821b3710800000000000000
+      internalID: 1673952031997463135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_14
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 537
+        width: 74
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a6ff9722ead5ac0800000000000000
+      internalID: -3864741442115114404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 285
+        width: 85
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a2cfa82ab8ecf090800000000000000
+      internalID: -7999262951872675163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_16
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 280
+        width: 94
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3790baa9f3d13ee0800000000000000
+      internalID: -1283011349559863492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_17
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 279
+        width: 85
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdad19b333a194cd0800000000000000
+      internalID: -2573496904720459045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_18
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 282
+        width: 74
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c34e1064822cd950800000000000000
+      internalID: 6475088316195554246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_19
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 284
+        width: 78
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 115f78a898b980760800000000000000
+      internalID: 7424355000757253393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_20
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 28
+        width: 103
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bb3db1e190b21cd0800000000000000
+      internalID: -2588812695180592204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_21
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 24
+        width: 117
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 205ad6e3b2f501b60800000000000000
+      internalID: 7714770801021265154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_22
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 24
+        width: 96
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6eca8e4decaa830800000000000000
+      internalID: 4083303425996809901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_23
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 24
+        width: 78
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 743b3272be06f64d0800000000000000
+      internalID: -3139183852163714233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_LeftUp_24
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 27
+        width: 73
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981438afa37851430800000000000000
+      internalID: 3753054551863935369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Walk_LeftUp_0: 4993544668869750657
+      Walk_LeftUp_1: 7844187103242201732
+      Walk_LeftUp_10: 9070946514208619074
+      Walk_LeftUp_11: -5508978204171630624
+      Walk_LeftUp_12: -885721310195387082
+      Walk_LeftUp_13: 1673952031997463135
+      Walk_LeftUp_14: -3864741442115114404
+      Walk_LeftUp_15: -7999262951872675163
+      Walk_LeftUp_16: -1283011349559863492
+      Walk_LeftUp_17: -2573496904720459045
+      Walk_LeftUp_18: 6475088316195554246
+      Walk_LeftUp_19: 7424355000757253393
+      Walk_LeftUp_2: 8026715004763190199
+      Walk_LeftUp_20: -2588812695180592204
+      Walk_LeftUp_21: 7714770801021265154
+      Walk_LeftUp_22: 4083303425996809901
+      Walk_LeftUp_23: -3139183852163714233
+      Walk_LeftUp_24: 3753054551863935369
+      Walk_LeftUp_3: 149370132358377372
+      Walk_LeftUp_4: -1839652412907183699
+      Walk_LeftUp_5: 8908256350671342672
+      Walk_LeftUp_6: -2511610316734548522
+      Walk_LeftUp_7: -7432211458768385105
+      Walk_LeftUp_8: -1902728739262194142
+      Walk_LeftUp_9: -6046731730836094008
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

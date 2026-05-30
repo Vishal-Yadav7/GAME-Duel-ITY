@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: f1017d7e2e98f4a4d9862f47736fcb8e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6569102699196040418
+    second: R-iso_walk_up_0
+  - first:
+      213: -5756558639423561679
+    second: R-iso_walk_up_1
+  - first:
+      213: 4746850267280909990
+    second: R-iso_walk_up_2
+  - first:
+      213: 3406355641668604147
+    second: R-iso_walk_up_3
+  - first:
+      213: -7554379837809262647
+    second: R-iso_walk_up_4
+  - first:
+      213: -5990803040024769490
+    second: R-iso_walk_up_5
+  - first:
+      213: -2469919814510933494
+    second: R-iso_walk_up_6
+  - first:
+      213: 804099345936549609
+    second: R-iso_walk_up_7
+  - first:
+      213: 702579760145897196
+    second: R-iso_walk_up_8
+  - first:
+      213: -1435944314403862927
+    second: R-iso_walk_up_9
+  - first:
+      213: -458473734643267173
+    second: R-iso_walk_up_10
+  - first:
+      213: 4682527730646739241
+    second: R-iso_walk_up_11
+  - first:
+      213: -6550904622102528147
+    second: R-iso_walk_up_12
+  - first:
+      213: -1245680290904325847
+    second: R-iso_walk_up_13
+  - first:
+      213: -3830362545971583000
+    second: R-iso_walk_up_14
+  - first:
+      213: -8552097302962779615
+    second: R-iso_walk_up_15
+  - first:
+      213: 7281232426485842532
+    second: R-iso_walk_up_16
+  - first:
+      213: -6127969949507968834
+    second: R-iso_walk_up_17
+  - first:
+      213: 8313308914896894483
+    second: R-iso_walk_up_18
+  - first:
+      213: 8388457317636823679
+    second: R-iso_walk_up_19
+  - first:
+      213: 8389274674890352714
+    second: R-iso_walk_up_20
+  - first:
+      213: 5342670098867270040
+    second: R-iso_walk_up_21
+  - first:
+      213: -4512980675354543363
+    second: R-iso_walk_up_22
+  - first:
+      213: -9103651568283099408
+    second: R-iso_walk_up_23
+  - first:
+      213: 3578057469553726666
+    second: R-iso_walk_up_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: R-iso_walk_up_0
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1078
+        width: 78
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b3c5156ebd5d4a0800000000000000
+      internalID: -6569102699196040418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_1
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 1073
+        width: 78
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 130e370ca689c10b0800000000000000
+      internalID: -5756558639423561679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_2
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 1068
+        width: 77
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a62f3f0b2330e140800000000000000
+      internalID: 4746850267280909990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_3
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 1065
+        width: 76
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f01e40986ec54f20800000000000000
+      internalID: 3406355641668604147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_4
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 1064
+        width: 77
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf7105ff83792790800000000000000
+      internalID: -7554379837809262647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_5
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 814
+        width: 80
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c4eff20646cdca0800000000000000
+      internalID: -5990803040024769490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_6
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 808
+        width: 79
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a8060d30519bdd0800000000000000
+      internalID: -2469919814510933494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_7
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 805
+        width: 79
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e60ca6481cb82b00800000000000000
+      internalID: 804099345936549609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_8
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 804
+        width: 80
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce610e5c19010c900800000000000000
+      internalID: 702579760145897196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_9
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 814
+        width: 79
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17647b60140821ce0800000000000000
+      internalID: -1435944314403862927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_10
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 555
+        width: 77
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b99cdb3419c23a9f0800000000000000
+      internalID: -458473734643267173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_11
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 552
+        width: 76
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9296d14792eabf040800000000000000
+      internalID: 4682527730646739241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_12
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 552
+        width: 78
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f3d1254f28615a0800000000000000
+      internalID: -6550904622102528147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_13
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 559
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92141f4106476bee0800000000000000
+      internalID: -1245680290904325847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_14
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 565
+        width: 81
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e7276efe81d7dac0800000000000000
+      internalID: -3830362545971583000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_15
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 292
+        width: 79
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ac35c50d8d05980800000000000000
+      internalID: -8552097302962779615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_16
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 292
+        width: 80
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4628eb370522c0560800000000000000
+      internalID: 7281232426485842532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_17
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 303
+        width: 79
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb02f4d5cc315faa0800000000000000
+      internalID: -6127969949507968834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_18
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 309
+        width: 78
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31a748c896ece5370800000000000000
+      internalID: 8313308914896894483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_19
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 304
+        width: 78
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ad4478c79c96470800000000000000
+      internalID: 8388457317636823679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_20
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 40
+        width: 77
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4825085ed0bc6470800000000000000
+      internalID: 8389274674890352714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_21
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 47
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 891b513f52af42a40800000000000000
+      internalID: 5342670098867270040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_22
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 54
+        width: 80
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfa3a4f8cfbae51c0800000000000000
+      internalID: -4512980675354543363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_23
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 46
+        width: 80
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fede81c12559a180800000000000000
+      internalID: -9103651568283099408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R-iso_walk_up_24
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 40
+        width: 79
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac4deaaaf40d7a130800000000000000
+      internalID: 3578057469553726666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      R-iso_walk_up_0: -6569102699196040418
+      R-iso_walk_up_1: -5756558639423561679
+      R-iso_walk_up_10: -458473734643267173
+      R-iso_walk_up_11: 4682527730646739241
+      R-iso_walk_up_12: -6550904622102528147
+      R-iso_walk_up_13: -1245680290904325847
+      R-iso_walk_up_14: -3830362545971583000
+      R-iso_walk_up_15: -8552097302962779615
+      R-iso_walk_up_16: 7281232426485842532
+      R-iso_walk_up_17: -6127969949507968834
+      R-iso_walk_up_18: 8313308914896894483
+      R-iso_walk_up_19: 8388457317636823679
+      R-iso_walk_up_2: 4746850267280909990
+      R-iso_walk_up_20: 8389274674890352714
+      R-iso_walk_up_21: 5342670098867270040
+      R-iso_walk_up_22: -4512980675354543363
+      R-iso_walk_up_23: -9103651568283099408
+      R-iso_walk_up_24: 3578057469553726666
+      R-iso_walk_up_3: 3406355641668604147
+      R-iso_walk_up_4: -7554379837809262647
+      R-iso_walk_up_5: -5990803040024769490
+      R-iso_walk_up_6: -2469919814510933494
+      R-iso_walk_up_7: 804099345936549609
+      R-iso_walk_up_8: 702579760145897196
+      R-iso_walk_up_9: -1435944314403862927
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
